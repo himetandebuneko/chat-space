@@ -1,0 +1,18 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header__box
+      %p.side-bar__header__box__user-name
+        aa
+      %ul.side-bar__header__box__menu
+        %li.side-bar__header__box__menu__new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side-bar__header__box__menu__option
+          = link_to "#" do
+            =icon('fas', 'cog')
+  .group-lists
+    = link_to "#", class:"group" do
+      %p.group__group-name
+        groupname
+      %p.group__latest-message
+        まだメッセージがありません
