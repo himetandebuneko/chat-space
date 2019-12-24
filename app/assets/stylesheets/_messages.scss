@@ -110,15 +110,16 @@
       }
     }
   }
-  &__message-form{
+  .message-form{
     height: 90px;
     background-color: #ddd;
     padding: 20px 40px;
-    &__new-message{
+    form{
       display: flex;
-      .__input-box{
-        position: relative;
+      .input-box{
+        display: flex;
         width: 100%;
+        position: relative;
         &__text{
           height: 50px;
           width: 100%;
@@ -126,8 +127,18 @@
           color: #434a54;
           border-style: none;
         }
+        &__image{
+          position: absolute;
+          top: 10x;
+          right: 10px;
+          cursor: pointer;
+          font-size: 1.3rem;
+          &__file{
+            display: none;
+          }
+        }
       }
-      &__submit-btn{
+      .submit-btn{
         width: 100px;
         height: 50px;
         padding: 0 30px;
