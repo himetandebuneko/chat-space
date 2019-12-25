@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.side-bar{
+  color:white;
+  width: 300px;
+  float: left;
+  &__header{
+    background-color: #253141;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    &__box{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-weight: bold;
+      height: 24px;
+      &__user-name{
+        
+      }
+      &__menu{
+        margin-left: 0.3rem;
+        display: flex;
+        list-style-type: disc;
+        list-style: none;
+        
+        li{
+          margin-left: 0.3em;
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .group-lists{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 20px 20px 0;
+    overflow: scroll;
+
+  .group {
+    color: white;
+    padding-bottom: 40px;
+    text-decoration: none;
+  }
+
+  }
+  
+}
