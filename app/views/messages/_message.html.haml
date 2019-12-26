@@ -1,9 +1,9 @@
 .chat-main__message-list__message
-  .upper-message
-    .upper-message__user-name
+  .message
+    .message__user-name
       = message.user.name
-    .upper-message__date
-      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+    .message__info
+      = message.created_at.strftime("%Y/%m/%d/ %H:%M:%S")
   .lower-message
     - if message.content.present?
       %p.lower-message__content
